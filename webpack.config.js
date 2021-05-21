@@ -28,7 +28,7 @@ module.exports = {
       inject: 'body',
     }),
     new CleanWebpackPlugin(),
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {from: './src/img', to: 'img'},
