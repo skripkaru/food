@@ -9,8 +9,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img {
-            transform: scale(1.5);
+
+        svg {
+            width: 30px;
+            height: 30px;
         }
     }
     &__input {

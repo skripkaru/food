@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   mode: 'development',
@@ -22,13 +23,13 @@ module.exports = {
     port: 8080,
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html'),
       inject: 'body',
     }),
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {from: './src/img', to: 'img'},
@@ -36,6 +37,7 @@ module.exports = {
         {from: './src/resources', to: './'},
       ],
     }),
+    new SpriteLoaderPlugin()
   ],
   module: {
     rules: [
@@ -45,7 +47,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
       {
@@ -56,6 +58,13 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        options: {
+          extract: true,
+        }
+      }
     ],
   }
 }

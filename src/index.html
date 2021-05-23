@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__left-block">
             <a href="/" class="header__logo">
-                <img src="icons/logo.svg" alt="Логотип">
+                <img src="img/logo.png" alt="">
             </a>
             <nav class="header__links">
                 <a href="#" class="header__link">Доставка питания</a>
@@ -27,10 +27,14 @@
         <div class="sidepanel__text"><span>Социальные сети</span></div>
         <div class="sidepanel__divider"></div>
         <a href="#" class="sidepanel__icon">
-            <img src="icons/instagram.svg" alt="instagram">
+            <svg class='icon'>
+                <use xlink:href='icons/sprite.svg#instagram'/>
+            </svg>
         </a>
         <a href="#" class="sidepanel__icon">
-            <img src="icons/facebook.svg" alt="facebook">
+            <svg class='icon'>
+                <use xlink:href='icons/sprite.svg#facebook'/>
+            </svg>
         </a>
     </div>
 
@@ -117,13 +121,17 @@
             <div class="offer__slider">
                 <div class="offer__slider-counter">
                     <div class="offer__slider-prev">
-                        <img src="icons/left.svg" alt="prev">
+                        <svg class='icon'>
+                            <use xlink:href='icons/sprite.svg#left'/>
+                        </svg>
                     </div>
                     <span id="current">03</span>
                     /
                     <span id="total">04</span>
                     <div class="offer__slider-next">
-                        <img src="icons/right.svg" alt="next">
+                        <svg class='icon'>
+                            <use xlink:href='icons/sprite.svg#right'/>
+                        </svg>
                     </div>
                 </div>
                 <div class="offer__slider-wrapper">
@@ -209,7 +217,9 @@
             <form action="#" class="order__form">
                 <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
-                <img src="icons/right.svg" alt="right">
+                <svg class='icon'>
+                    <use xlink:href='icons/sprite.svg#right'/>
+                </svg>
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>
@@ -262,7 +272,9 @@
                 <a href="#" class="link">facebook</a>
             </div>
             <div class="pepper">
-                <img src="icons/veg.svg" alt="pepper">
+                <svg class='icon'>
+                    <use xlink:href='icons/sprite.svg#veg'/>
+                </svg>
             </div>
             <div class="call">
                 <div class="subtitle">Или позвоните нам</div>
