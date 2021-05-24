@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -38,7 +38,14 @@ module.exports = {
         {from: './src/resources', to: './'},
       ],
     }),
-    new SpriteLoaderPlugin()
+    new SVGSpritemapPlugin('./src/icons/*.svg', {
+      output: {
+        filename: 'sprite.svg',
+      },
+      sprite: {
+        prefix: false,
+      }
+    })
   ],
   module: {
     rules: [
@@ -59,13 +66,6 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        options: {
-          extract: true,
-        }
-      }
     ],
   }
 }

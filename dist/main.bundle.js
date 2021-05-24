@@ -76,7 +76,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
   \******************************/
 /***/ ((module) => {
 
-eval("module.exports = \"data:image/svg+xml;base64,ZXhwb3J0IGRlZmF1bHQgewogICAgICBpZDogInN3aXRjaC11c2FnZSIsCiAgICAgIHZpZXdCb3g6ICIwIDAgMTYgMTYiLAogICAgICB1cmw6IF9fd2VicGFja19wdWJsaWNfcGF0aF9fICsgIkM6XFx4YW1wcFxcaHRkb2NzXFxwcm9qZWN0c1xcZm9vZFxcc3JjXFxpY29uc1xcc3dpdGNoLnN2ZyIsCiAgICAgIHRvU3RyaW5nOiBmdW5jdGlvbiAoKSB7CiAgICAgICAgcmV0dXJuIHRoaXMudXJsOwogICAgICB9CiAgICB9\";\n\n//# sourceURL=webpack://food/./src/icons/switch.svg?");
+eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNSA4QzE1IDExLjg2NiAxMS44NjYgMTUgOCAxNUM0LjEzNDAxIDE1IDEgMTEuODY2IDEgOEMxIDQuMTM0MDEgNC4xMzQwMSAxIDggMUMxMS44NjYgMSAxNSA0LjEzNDAxIDE1IDhaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIvPg0KPHBhdGggZD0iTTUgOEw3LjI1IDQuNTM1OUw3LjI1IDExLjQ2NDFMNSA4WiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC41Ii8+DQo8cGF0aCBkPSJNMTEgOEw4Ljc1IDExLjQ2NDFMOC43NSA0LjUzNTlMMTEgOFoiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuNSIvPg0KPC9zdmc+DQo=\";\n\n//# sourceURL=webpack://food/./src/icons/switch.svg?");
 
 /***/ })
 
@@ -165,7 +165,7 @@ eval("module.exports = \"data:image/svg+xml;base64,ZXhwb3J0IGRlZmF1bHQgewogICAgI
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("6154a6b46d8a7bee69c5")
+/******/ 		__webpack_require__.h = () => ("20a7f11fe7070a2ce573")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
