@@ -12,7 +12,7 @@ self["webpackHotUpdatefood"]("main",{},
 /******/ 
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("491d17c96a69d3142d0a")
+/******/ 	__webpack_require__.h = () => ("e96f3a58b8f3804b8496")
 /******/ })();
 /******/ 
 /******/ }
