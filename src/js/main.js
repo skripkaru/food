@@ -1,20 +1,33 @@
 import '../scss/main.scss';
 import "regenerator-runtime/runtime";
 
-window.addEventListener('DOMContentLoaded', function () {
-    const tabs = require('./modules/tabs');
-    const modal = require('./modules/modal');
-    const timer = require('./modules/timer');
-    const cards = require('./modules/cards');
-    const calc = require('./modules/calc');
-    const forms = require('./modules/forms');
-    const slider = require('./modules/slider');
+import tabs from './modules/tabs';
+import modal from './modules/modal';
+import timer from './modules/timer';
+import cards from './modules/cards';
+import calc from './modules/calc';
+import forms from './modules/forms';
+import slider from './modules/slider';
+import {openModal} from './modules/modal';
 
-    tabs();
-    modal();
-    timer();
+window.addEventListener('DOMContentLoaded', () => {
+
+    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 500000);
+
+    tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
+    modal('[data-modal]', '.modal', modalTimerId);
+    timer('.timer', '2023-01-01');
     cards();
     calc();
-    forms();
-    slider();
+    forms('form', modalTimerId);
+    slider({
+        container: '.offer__slider',
+        wrapper: '.offer__slider-wrapper',
+        field: '.offer__slider-inner',
+        slide: '.offer__slide',
+        nextArrow: '.offer__slider-next',
+        prevArrow: '.offer__slider-prev',
+        totalCounter: '#total',
+        currentCounter: '#current',
+    });
 });
